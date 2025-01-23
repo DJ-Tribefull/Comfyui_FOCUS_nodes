@@ -1,10 +1,19 @@
+abandoned amusement park
 abandoned building
+abandoned factory
+abandoned hospital
 abandoned pier
 alleyway
+ancient ruins
+aquarium tunnel
+arched corridor
 architectural landmark
 architectural ruins
+art gallery
+astronomical observatory
 atrium
 autumn foliage
+backstage at a theater
 balcony
 balcony with city view
 ballroom
@@ -14,97 +23,164 @@ bathroom
 beach
 beach boardwalk
 beach bonfire
+beach cave
 beach dunes
+beach shack
 beachfront boardwalk
 bedroom
+bicycle path
 bioluminescent bay
+blossoming orchard
 boardroom
+boat dock
 bookstore
 botanical arboretum
 botanical conservatory
 botanical garden
 botanical greenhouse
+boulder field
 bridge
+cactus garden
 cafe
 campground
+candlelit room
 canopy walkway
+canyon floor
 canyon overlook
+castle ruins
+cave with a waterfall
+chapel ruins
+cherry blossom park
+city market
 city skyline at night
 city street
 classroom
 cliff-top viewpoint
 cliffside
+clock tower interior
+coastal cliff cave
 coastal path
 coffee shop
 college campus
 college courtyard
 college library
+community garden
 conservatory
 country road
 countryside
 courtyard
+desert highway
+desert oasis
+dewy meadow
 dining room
+dockyard
+doorway in the forest
 dressing room
 empty road
 empty street
+enchanted forest glade
 fairground
+fairy circle in a forest
 farm
+farm windmill
 farmers market
 farmhouse
 field
+field of sunflowers
 fjord lookout
+floating dock on a lake
 flower field
+flower-covered trellis
+foggy coastline
 foggy forest
 forest
 forest trail
 garden
 glacial lake
+glass dome atrium
+glass-bottomed bridge
+golden hour hillside
+gothic cathedral
 graffiti alley
 graffiti wall
+graffiti-covered train car
 grand staircase
 grass field
+grassy hilltop with a tree
 green field
+hidden cove
 hills
 historic bridge
 historic church
 historic mansion garden
+historic marketplace
 historical mansion
 historical site
 home office
+hot air balloon launch site
 hot spring
+ice cave
+icy tundra
 industrial area
 industrial warehouse
+infinity pool with a view
+island beach
+jungle clearing
 kitchen
 lake
 lakeside cottage
+lavender field
 library
 lighthouse
 living room
 lobby
 locker room
+lone tree on a hill
+long winding road
+lookout tower
+lost temple ruins
 lush waterfall
+luxury villa
 mangrove swamp
 meadow
+meandering stream
+meditation garden
 meditation room
 meteor crater
 middle of nowhere
+modern art installation
+monastery courtyard
 moonlit beach
+moonlit forest trail
+mossy boulder field
 mountain
+mountain cabin
+mountain pass
 mountain summit
+natural arch formation
 night bazaar
 nightclub
 northern lights viewpoint
 ocean pier
+oceanfront cliff house
 office
 old town
+old-fashioned diner
 open field
 orchard
+outdoor amphitheater
+palace gardens
+palm grove
 park
+pathway lit by lanterns
 picnic spot
+pier at sunset
 playground
 public garden
 public library
 public plaza
+rainforest waterfall
+ravine with a bridge
 redwood grove
 restroom
 rice terrace
@@ -112,6 +188,8 @@ river delta
 riverbank
 riverfront promenade
 riverside dock
+rocky coastline
+rocky mountain trail
 rolling hills
 roman bathhouse
 rooftop
@@ -119,41 +197,71 @@ rooftop bar
 rooftop garden
 rooftop pool
 rooftop terrace
+rowboat on a lake
 ruins
 rural road
+rustic barn
 saloon
 salt flat
+salt marsh
 sandy dunes
 sauna
+scenic train station
 school
 seaside cliff
 seaside town
+secluded beach
+secluded campsite
+secret garden
+shipwreck beach
 skyscraper rooftop
+snow-covered forest
+snowy mountain peak
 spa room
+spring meadow with wildflowers
 staircase
 stairwell
 stargazing dome
+steamy jungle path
+stone bridge over a river
+stone garden
+stone ruins in a forest
+stormy shoreline
 street
 street art mural
 studio apartment
 study
+sunken garden
 sunrise viewpoint
 sunroom
 sunset overlook
 tea plantation
+temple courtyard
 theater
 theater room
+trail through a cornfield
+tranquil pond
 treetop canopy
 tropical rainforest
+underground cave pool
+underground station
 urban alley
 urban courtyard
 urban garden
+urban graffiti tunnel
 urban rooftop garden
+urban skate park
 urban skyline
 urban warehouse
+victorian greenhouse
 village
+village fountain
 village sqare
 village street
+vineyard at dusk
+vintage carousel
+volcanic crater
+walled garden
 warehouse district
 waterfall
 waterfront
@@ -162,6 +270,11 @@ waterfront promenade
 waterfront warehouse
 wildflower field
 wildlife reserve
+wind farm
 winter wonderland
+wooden bridge over a stream
+wooden hut in the woods
+wooden pier on a lake
 yacht club
 zen monastery
+zen rock garden
