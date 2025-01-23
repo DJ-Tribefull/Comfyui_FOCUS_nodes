@@ -1,7 +1,7 @@
-tribefull[project]
+[project]
 name = "focus_nodes"
 description = "A collection of nodes designed for efficiency and the reduction of screen-clutter. Includes a Global Seed controller with boolean toggles, SDXL All-in-One conditioner, a custom SDXL control module, Wildcard processor, Style Injector, and more."
-version = "1.0.0"
+version = "1.0.1"
 license = {file = "LICENSE"}
 
 [project.urls]
@@ -11,4 +11,4 @@ Repository = "https://github.com/DJ-Tribefull/Comfyui_FOCUS_nodes"
 [tool.comfy]
 PublisherId = "tribefull"
 DisplayName = "Comfyui_FOCUS_nodes"
-Icon = "⚜️"
+Icon = ""
