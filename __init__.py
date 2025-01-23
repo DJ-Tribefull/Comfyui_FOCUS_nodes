@@ -9,7 +9,7 @@ def generate_node_list():
         print(f"Error: 'focus_nodes' folder not found at {focus_nodes_dir}.")
         return []
 
-    # List all .py files in the folder (excluding __init__.py if it exists)
+    # Construct list of all .py files in the folder (excluding __init__.py if it exists)
     node_files = [
         os.path.splitext(filename)[0]  # Remove the .py extension
         for filename in os.listdir(focus_nodes_dir)
@@ -17,7 +17,7 @@ def generate_node_list():
     ]
 
     if not node_files:
-        print(f"No Python files found in 'focus_nodes'.")
+        print(f"No valid modules found in 'focus_nodes'.")
     return node_files
 
 
@@ -28,7 +28,7 @@ node_list = generate_node_list()
 NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}
 
-# Dynamically import each module and update mappings
+# Import each module and update mappings
 for module_name in node_list:
     try:
         imported_module = importlib.import_module(f".focus_nodes.{module_name}", __name__)
