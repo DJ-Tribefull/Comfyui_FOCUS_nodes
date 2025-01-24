@@ -37,7 +37,8 @@ Quick and easy upscaling/downscaling. Scale_factor is based on the resolution of
 1. FOCUS Workflow (basic)
    Everything you need to generate an endless amount of pro-quality portraits with a single click. Add additional wildcards for even MORE variation. 
 
-![FOCUS Workflow_basic](https://github.com/user-attachments/assets/a47290ff-17c5-4c18-b44d-009e8bac0318)
+![FocusWorkflow](https://github.com/user-attachments/assets/c41025c4-f3f8-4d41-8d28-9045e699cdaa)
+
 
 
 
