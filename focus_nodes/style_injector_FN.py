@@ -3,6 +3,7 @@ import csv
 import re  # Regular expression module for text processing
 
 class StyleInjectorFN:
+    
     _last_refresh_time = None  # Tracks the last modification time of the focus_styles.csv file
     styles_by_category = {}  # Holds styles loaded from the CSV file
 
