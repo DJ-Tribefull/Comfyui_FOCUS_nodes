@@ -34,11 +34,12 @@ Quick and easy upscaling/downscaling. Scale_factor is based on the resolution of
 
 ## Workflows
 
-1. FOCUS Workflow (basic)
+1. FOCUS Workflow (basic).
    Everything you need to generate an endless amount of pro-quality portraits with a single click. Add additional wildcards for even MORE variation. 
 
 ![FocusWorkflow](https://github.com/user-attachments/assets/c41025c4-f3f8-4d41-8d28-9045e699cdaa)
 
+2. FOCUS Workflow (advanced). Adds a SAM/SEGS face detailer and a LORA stack.
 
-
+![FocusWorkflow_advanced](https://github.com/user-attachments/assets/ecf0bd22-8171-4a17-8df6-d58ec85ee4c7)
 
