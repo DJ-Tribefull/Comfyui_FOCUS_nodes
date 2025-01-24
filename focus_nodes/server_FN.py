@@ -5,9 +5,6 @@ import server
 from enum import Enum
 from aiohttp import web
 from . import global_seed_FN
-import logging
-
-logger = logging.getLogger(__name__)
 
 max_seed = 2**32 - 1  
 
@@ -49,7 +46,7 @@ def prompt_seed_update(json_data):
     try:
         widget_idx_map = json_data['extra_data']['extra_pnginfo']['workflow']['widget_idx_map']
     except Exception:
-        logger.warning(f"Exception in prompt seed update")  
+        print(f"Exception in prompt seed update")  
         return False, None
 
     # First Pass: Find and process the GlobalSeedFN node
@@ -171,7 +168,7 @@ def workflow_seed_update(json_data):
 
 
 def onprompt(json_data):
-    logger.warning(f"onprompt triggered")  
+    print(f"onprompt triggered")  
     control_seed_valid = prompt_seed_update(json_data)
     if control_seed_valid:
         workflow_seed_update(json_data)
@@ -182,7 +179,7 @@ def onprompt(json_data):
 
 # Register the onprompt handler with the server
 server.PromptServer.instance.add_on_prompt_handler(onprompt)
-logger.warning(f"onprompt handler registered")
+print(f"onprompt handler registered")
 
 
 # Register the node

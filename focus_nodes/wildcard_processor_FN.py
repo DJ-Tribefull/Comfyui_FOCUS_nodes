@@ -6,9 +6,6 @@ Purpose: Implements a custom ComfyUI node for processing wildcard text inputs.
 import os
 import re
 import numpy as np
-import logging
-
-logger = logging.getLogger(__name__)
 
 class WildcardProcessor:
     def __init__(self, wildcard_path=None):
@@ -17,7 +14,7 @@ class WildcardProcessor:
 
         # Ensure the wildcard path exists or create it
         if not os.path.exists(self.wildcards_path):
-            logger.warning(f"[WildcardProcessor] The wildcard path '{self.wildcards_path}' does not exist. Creating it now.")
+            print(f"[WildcardProcessor] The wildcard path '{self.wildcards_path}' does not exist. Creating it now.")
             os.makedirs(self.wildcards_path, exist_ok=True)
 
         self._wildcard_dict = {}
@@ -46,7 +43,7 @@ class WildcardProcessor:
                                 line.strip() for line in f if line.strip() and not line.startswith('#')
                             ]
                     except Exception as e:
-                        logger.error(f"Failed to read wildcard file '{file}': {e}")
+                        print(f"Failed to read wildcard file '{file}': {e}")
 
     def refresh_wildcards(self):
         """Refreshes the wildcard list only if .txt files have changed."""
@@ -55,7 +52,7 @@ class WildcardProcessor:
 
         # Ensure the wildcard path exists
         if not os.path.exists(self.wildcards_path):
-            logger.error(f"[WildcardProcessor] The wildcard path '{self.wildcards_path}' does not exist.")
+            print(f"[WildcardProcessor] The wildcard path '{self.wildcards_path}' does not exist.")
             return
 
         try:
@@ -72,7 +69,7 @@ class WildcardProcessor:
                 self.read_wildcards()
 
         except Exception as e:
-            logger.error(f"Error during wildcard refresh: {e}")
+            print(f"Error during wildcard refresh: {e}")
 
     def replace_wildcards(self, string, seed=None):
         """Replaces wildcard placeholders in a string with random values."""
@@ -83,7 +80,7 @@ class WildcardProcessor:
             if key in self._wildcard_dict:
                 return rng.choice(self._wildcard_dict[key])
             else:
-                logger.warning(f"Wildcard key '{key}' not found in dictionary.")
+                print(f"Wildcard key '{key}' not found in dictionary.")
                 return f"!!__{key}__"
 
         pattern = r"__([\w.\-+/\\]+?)__"
@@ -122,7 +119,7 @@ class WildcardProcessorFN:
         try:
             self.cached_result = self.processor.replace_wildcards(prompt_input, seed)
         except Exception as e:
-            logger.error(f"Error during wildcard replacement: {e}")
+            print(f"Error during wildcard replacement: {e}")
             return (prompt_input,)
 
         return (self.cached_result,)

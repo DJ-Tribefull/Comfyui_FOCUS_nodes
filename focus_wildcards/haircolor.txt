@@ -1,30 +1,31 @@
-Blonde
-Brunette
-Black
-Platinum blonde
-Auburn
-Red
-Strawberry blonde
-Chestnut
-Caramel
-Honey blonde
-Copper
-Ash blonde
-Silver
-Gray
-White
-Lavender
-Blue
-Pink
-Purple
-Teal
-Green
-Burgundy
-Mahogany
-Ombre
-Balayage
-Rose gold
-Pastel pink
-Chocolate brown
-Sandy blonde
-Raven
+auburn
+ash blonde
+balayage
+black
+blonde
+blue
+brunette
+burgundy
+caramel
+chestnut
+chocolate brown
+copper
+ginger
+gray
+green
+honey blonde
+lavender
+mahogany
+ombre
+pastel pink
+pink
+platinum
+purple
+raven
+red
+rose gold
+sandy blonde
+silver
+strawberry blonde
+teal
+white

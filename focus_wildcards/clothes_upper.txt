@@ -1,5 +1,6 @@
 asymmetrical top
 bandeau top
+ballgown
 baseball jacket
 bathrobe
 bikini
@@ -13,21 +14,26 @@ bustier
 button-down
 button-up shirt
 cage bra
+camo jacket
+camo vest
 cardigan
 coat
 cold shoulder top
 corset
 corset top
+coveralls
 cowl-neck sweater
 crochet top
 crop hoodie
 crop jacket
 crop top
 denim jacket
+distressed sweater
 dress
 fishnet top
 flannel shirt
 fleece jacket
+formal gown
 fur stole
 halter dress
 halter top
@@ -43,10 +49,11 @@ lace bolero
 latex top
 leather jacket
 leather vest
+maternity wear
 mesh shirt
-nipple covers
 off-shoulder top
 one-piece
+overalls
 parka
 pasties
 peacoat
@@ -60,14 +67,17 @@ pullover
 raincoat
 robe
 romper
+sarong
 shawl
 sheer blouse
 shirt
 shrug
 skirt
 sleeveless turtleneck
+sports bra
 strappy bralette
 suit
+sundress
 sweater
 sweatshirt
 swimsuit
