@@ -8,6 +8,8 @@ Drag the image below onto your workspace for a visual tour of the nodes, or scro
 
 ## Documentation
 
+(credit where it's due: some of these nodes are refactors/branches of various nodes that already exist, most notably, the Wildcard Processor and Global Seed from Impact and Inspire. My versions trim some things I don't need, and add a few new useful features)
+
 **Global Seed Controller**
 Inspired by Inspire's node; this one adds a simple toggle to flip between fixed and randomize (the only two modes the average user needs). It also offers a toggle for either full randomization or a truly global shared seed.
 
