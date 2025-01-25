@@ -37,11 +37,11 @@ Quick and easy upscaling/downscaling. Scale_factor is based on the resolution of
 ## Workflows
 
 1. FOCUS Workflow (basic).
-   Everything you need to generate an endless amount of pro-quality portraits with a single click. Add additional wildcards for even MORE variation. 
+   Everything you need to generate an endless amount of pro-quality portraits with a single click. Add additional wildcards for even MORE variation. The model-unloader node ensures the workflow can run smoothly on even 12GB gpus. Users with > 18GB vram can disable it to save a few seconds of generation time.
 
 ![FocusWorkflow](https://github.com/user-attachments/assets/c41025c4-f3f8-4d41-8d28-9045e699cdaa)
 
-2. FOCUS Workflow (advanced). Adds a SAM/SEGS face detailer and a LORA stack.
+2. FOCUS Workflow (advanced). Adds a SAM/SEGS face detailer and a LORA stack. The detailer is only useful for certain combinations of checkpoints/LORAs. It doesn't really do much for the workflow's default checkpoints, but good to have available when you need it.
 
 ![FocusWorkflow_advanced](https://github.com/user-attachments/assets/ecf0bd22-8171-4a17-8df6-d58ec85ee4c7)
 
