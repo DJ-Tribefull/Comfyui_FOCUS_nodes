@@ -37,7 +37,7 @@ Quick and easy upscaling/downscaling. Scale_factor is based on the resolution of
 ## Workflows
 
 1. FOCUS Workflow (basic).
-   Everything you need to generate an endless amount of pro-quality portraits with a single click. Add additional wildcards for even MORE variation. The model-unloader node ensures the workflow can run smoothly on even 12GB gpus. Users with > 18GB vram can disable it to save a few seconds of generation time.
+   Everything you need to generate an endless amount of pro-quality portraits with a single click. Add additional wildcards/styles for even MORE variation. The model-unloader node ensures the workflow can run smoothly on even 12GB gpus. Users with > 18GB vram can disable it to save a few seconds of generation time.
 
 ![FocusWorkflow](https://github.com/user-attachments/assets/c41025c4-f3f8-4d41-8d28-9045e699cdaa)
 
