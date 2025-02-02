@@ -1,3 +1,4 @@
+
 """
 Module: wildcard_processor_FN.py
 Purpose: Implements a custom ComfyUI node for processing wildcard text inputs.
@@ -45,52 +46,32 @@ class WildcardProcessor:
                     except Exception as e:
                         print(f"Failed to read wildcard file '{file}': {e}")
 
-    def refresh_wildcards(self):
-        """Refreshes the wildcard list only if .txt files have changed."""
-        # Dynamically determine the path to focus_wildcards
-        self.wildcards_path = os.path.abspath(os.path.join(__file__, "..", "..", "focus_wildcards"))
-
-        # Ensure the wildcard path exists
-        if not os.path.exists(self.wildcards_path):
-            print(f"[WildcardProcessor] The wildcard path '{self.wildcards_path}' does not exist.")
-            return
-
-        try:
-            # Get current state of all .txt files in the folder
-            current_files = {
-                file.path: os.path.getmtime(file.path)
-                for file in os.scandir(self.wildcards_path)
-                if file.name.endswith('.txt')
-            }
-
-            # Check if there are any changes
-            if current_files != self._last_refresh_state:
-                self._last_refresh_state = current_files
-                self.read_wildcards()
-
-        except Exception as e:
-            print(f"Error during wildcard refresh: {e}")
-
-    def replace_wildcards(self, string, seed=None):
-        """Replaces wildcard placeholders in a string with random values."""
+    def replace_wildcards(self, string, seed=None, cached_wildcards=None):
+        """Replaces wildcard placeholders in a string with random values, using a cache if provided."""
         rng = np.random.default_rng(seed)
+        wildcard_cache = cached_wildcards if cached_wildcards is not None else {}
 
         def replace_match(match):
             key = self.wildcard_normalize(match.group(1))
-            if key in self._wildcard_dict:
-                return rng.choice(self._wildcard_dict[key])
+            if key in wildcard_cache:
+                return wildcard_cache[key]
+            elif key in self._wildcard_dict:
+                replacement = rng.choice(self._wildcard_dict[key])
+                wildcard_cache[key] = replacement  # Store it for future use
+                return replacement
             else:
                 print(f"Wildcard key '{key}' not found in dictionary.")
                 return f"!!__{key}__"
 
         pattern = r"__([\w.\-+/\\]+?)__"
-        return re.sub(pattern, replace_match, string)
+        return re.sub(pattern, replace_match, string), wildcard_cache
 
 
 class WildcardProcessorFN:
     def __init__(self, wildcard_path=None):
         self.processor = WildcardProcessor(wildcard_path)
         self.cached_result = None
+        self.cached_wildcards = None  # Stores wildcard values when freeze_wildcards is True
 
     @classmethod
     def INPUT_TYPES(cls):
@@ -113,11 +94,13 @@ class WildcardProcessorFN:
         if not prompt_input.strip():
             return ("",)
 
-        if freeze_wildcards and self.cached_result is not None:
-            return (self.cached_result,)
+        if freeze_wildcards:
+            if self.cached_result is not None and self.cached_wildcards is not None:
+                return (self.processor.replace_wildcards(prompt_input, seed, self.cached_wildcards)[0],)
 
         try:
-            self.cached_result = self.processor.replace_wildcards(prompt_input, seed)
+            processed_result, self.cached_wildcards = self.processor.replace_wildcards(prompt_input, seed)
+            self.cached_result = processed_result
         except Exception as e:
             print(f"Error during wildcard replacement: {e}")
             return (prompt_input,)
