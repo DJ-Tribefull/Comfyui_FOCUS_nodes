@@ -1,7 +1,7 @@
 [project]
 name = "focus_nodes"
 description = "A collection of nodes designed for efficiency and the reduction of screen-clutter. Includes a Global Seed controller with boolean toggles, SDXL All-in-One conditioner, a custom SDXL control module, Wildcard processor, Style Injector, and more. WARNING: Updating this node-pack wil overwrite any changes you've made to the included wildcards and styles. Please backup your folders before updating."
-version = "1.1.0"
+version = "1.1.1"
 license = {file = "LICENSE"}
 
 [project.urls]
